@@ -1,2 +1,2 @@
-# diem-js-challenge-master-solution-2.0
-Solution of DIEM JavaScript Challenge by Kambar Nursultan
+# diem-js-challenge
+Digital Innovations for Emerging Markets (DIEM) JavaScript Challenge

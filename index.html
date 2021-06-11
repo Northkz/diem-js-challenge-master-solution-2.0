@@ -1,0 +1,100 @@
+<!-- Kambar Nursultan -->
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <title>DIEM Javascript Challenge</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <main class="m-3 p-3 d-flex justify-content-center align-items-center h-100">
+    <div class="container-fluid">
+      <div class="row h-100">
+        <!-- THE LEFT SECTION -->
+        <div class="col-12 col-sm-12 col-md-6">
+          <div class="panel bg-light">
+            <div class="panel-body p-3">
+              <form action="#">
+                <!-- Name -->
+                <div class="form-group">
+                  <label class="control-label" for="name" >
+                    Name:
+                  </label>
+                  <input class="form-control" type="text" id="name" name="name" onfocus="insideField()" onblur="outsideField()" />
+                </div>
+                <!-- Birthday -->
+                <div class="form-group">
+                  <label class="control-label" for="birthday">
+                    Birthday:
+                  </label>
+                  <input class="form-control" id="date" name="date" type="date" onfocus="guessing()" onblur="ageCalculator()"/>
+                </div>
+                <!-- Choose Theme -->
+                <div class="form-group">
+                  <label class="control-label mr-3">
+                    Choose Theme:
+                  </label>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="modeOptions" id="light" value="Light" onclick="changeColor_light()">
+                    <label class="form-check-label" for="light">Light Mode</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="modeOptions" id="dark" value="Dark" onclick="changeColor_dark()">
+                    <label class="form-check-label" for="dark">Dark Mode</label>
+                  </div>
+                </div>
+                <!-- Skills -->
+                <div class="form-group" id="mainBtnContainer">
+                  <label class="control-label mr-3">
+                    Skills:
+                  </label>
+                  <button type="button" class="btn btn-success btn-sm" id="html">HTML</button>
+                  <button type="button" class="btn btn-success btn-sm" id="css">CSS</button>
+                  <button type="button" class="btn btn-success btn-sm" id="javascript">JavaScript</button>
+                </div>
+
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- THE RIGHT SECTION -->
+        <div class="col-12 col-sm-12 col-md-6 h-100">
+          <div class="container" id="container">
+            <div class="panel-body p-3" >
+              <p id="nameOutput"></p>
+              <p id="ageOutput"></p>
+              <p id="themeOutput"></p>
+              <p id="skillsOutput"></p>
+              <p id="nothing"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <style>
+    .container{
+      background-color: #f8f9fa;
+    }
+    .btn_style{
+      width:fit-content;
+      height: fit-content;
+      color: #f8f9fa;
+      text-overflow: ellipsis;
+      background-color: #28a745;
+      border: none;
+      border-radius: 3px;
+      margin: 1em 0em 0em 1em;
+
+    }
+
+  </style>
+  <script src="functionalities.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
