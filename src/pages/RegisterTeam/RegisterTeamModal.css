@@ -1,0 +1,144 @@
+.search-input{
+  background: #fff;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+}
+.search-input input{
+  height: 55px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0 60px 0 20px;
+  font-size: 18px;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+}
+.search-input.active input{
+  border-radius: 5px 5px 0 0;
+}
+.search-input .autocom-box{
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+  max-height: 280px;
+  overflow-y: auto;
+}
+.search-input.active .autocom-box{
+  padding: 10px 8px;
+  opacity: 1;
+  pointer-events: auto;
+}
+.autocom-box li{
+  list-style: none;
+  padding: 8px 12px;
+  display: none;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+}
+.search-input.active .autocom-box li{
+  display: block;
+}
+.autocom-box li:hover{
+  background: #efefef;
+}
+
+.edit-team .modal-title{
+  color: #F4464E;
+  font-size: 36px;
+}
+
+
+.edit-team .MuiInputBase-input {
+text-align: left;
+}
+
+
+.edit-team
+.MuiOutlinedInput-root:hover +:enabled
+.MuiOutlinedInput-notchedOutline {
+border-color: #191D32;
+}
+
+.edit-team
+.MuiOutlinedInput-root.Mui-focused
+.MuiOutlinedInput-notchedOutline {
+border-color: #191D32;
+}
+
+.edit-team .MuiFormLabel-root{
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+
+.edit-team h5{
+  color: #191D32;
+}
+
+.edit-team i{
+  font-size: small;
+}
+
+p{
+  margin-bottom: 0px;
+}
+
+.FormFields .btn.btn-red{
+  color: white; 
+  background: #F4444C;
+  font-size: 0.8em;
+  border-radius: 8px;
+  width: 150px;
+  margin: 20px;
+}
+
+.FormFields .btn.btn-red:hover:enabled {
+  color: black;
+  border: 1px solid #F4444C;
+  background: white;
+}
+
+.del-icon :hover{
+  color: #F4444C;
+  cursor: pointer;
+}
+
+.FormFields .btn.btn-red:active, 
+.FormFields .btn.btn-red:focus{
+  box-shadow: none;
+  outline: none;
+}
+
+.FormFields .btn.btn-blue{
+  color: white;
+  background: #191D32;
+  font-size: 0.8em;
+  border-radius: 8px;
+  width: 150px;
+  margin: 20px;
+}
+
+.FormFields .btn.btn-blue:hover:enabled {
+  color: black;
+  border: 1px solid #191D32;
+  background: white;
+}
+
+.FormFields .btn.btn-blue:active, 
+.FormFields .btn.btn-blue:focus{
+  box-shadow: none;
+  outline: none;
+}
+
+@media (max-width: 576px) {
+  .FormFields .btn.btn-blue { 
+    margin: 15px; 
+    width: 100px; 
+  }
+  .FormFields .btn.btn-red { 
+    width: 100px; 
+    margin: 0px;
+  }
+}
