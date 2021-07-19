@@ -342,7 +342,7 @@ const deactivateFormNotification = async (userId, formId) => {
 const resetPassword = async (email) => {
   let axiosConfig = {
     headers: {
-      Authorization: header,
+      Authorization: header
     }
   }
 

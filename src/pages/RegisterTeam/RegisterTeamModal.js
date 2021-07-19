@@ -141,7 +141,7 @@ class RegisterTeamModal extends Component {
     function showSuggestions(list){
       let listData;
       if(!list.length){
-          listData = `<li>No such email</li>`;
+          listData = `<li>No such email </li>`;
     }else if(list.length >=5){
       let maxlenght = 5
       let newArray = []
